@@ -1,2 +1,3 @@
-﻿using System;
-Console.WriteLine("Hello, World!");
+﻿
+Animal obj = new();
+obj.DisplayAnimalDetail();
