@@ -1,9 +1,10 @@
+using System;
 class Animal
 {
-    internal string? name;
-    internal string? animalType;
+    internal string name;
+    internal string animalType;
     internal float age;
-    internal string? colour;
+    internal string colour;
     internal bool pet;
 
     internal void DisplayAnimalDetail()
@@ -22,4 +23,3 @@ class Animal
         Console.WriteLine($"Can {obj.name} be pet (T/F) ? --> {obj.pet}");
     }
 }
-
