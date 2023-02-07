@@ -1,8 +1,12 @@
 ﻿using System;
 
 
-MethodLearning obj = new();
-obj.Display();
+// MethodLearning obj = new();
+// obj.Display();
+
+// MethodLearning obj1 = new();
+// Console.WriteLine(obj1.SumOfSquare(12,34,12,33,4));
+
 
 // obj.Display("Hello");
 // obj.Display("Welcome");
@@ -37,7 +41,19 @@ obj.Display();
 // int mini = obj.CheckMinimum(12, 3, 4, 11, 1, 2, 4);
 // Console.WriteLine(mini);
 
-(int, int) minmax = obj.CheckMinMax(12, 23, 2, 1, 56, 657, 43, 89, 2);
-Console.WriteLine("Tuple returned value " + minmax);
+// (int, int) minmax = obj.CheckMinMax(12, 23, 2, 1, 56, 657, 43, 89, 2);
+// Console.WriteLine("Tuple returned value " + minmax);
 
 // Test test1 = new();
+
+Assignments_Methods obj = new();
+
+double m1 = obj.CalculateProductOfSquare(12,12);
+Console.WriteLine("The product of square of two supplied number is "+ m1);
+
+double m2 = obj.CalculateCubeRoot(23);
+Console.WriteLine("The cuberoot of given number is "+ m2);
+
+
+float m3 = obj.CalculateBMI(62,1.7f);
+Console.WriteLine("The BMI index of a person by giving weight as 62 Kg and height of 1.7 m is " + m3);
