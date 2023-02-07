@@ -48,12 +48,12 @@
 
 Assignments_Methods obj = new();
 
-double m1 = obj.CalculateProductOfSquare(12,12);
-Console.WriteLine("The product of square of two supplied number is "+ m1);
+double m1 = obj.CalculateProductOfSquare(12, 12);
+Console.WriteLine("The product of square of two supplied number is " + m1);
 
 double m2 = obj.CalculateCubeRoot(23);
-Console.WriteLine("The cuberoot of given number is "+ m2);
+Console.WriteLine("The cuberoot of given number is " + m2);
 
 
-float m3 = obj.CalculateBMI(62,1.7f);
+float m3 = obj.CalculateBMI(62, 5.6f);
 Console.WriteLine("The BMI index of a person by giving weight as 62 Kg and height of 1.7 m is " + m3);

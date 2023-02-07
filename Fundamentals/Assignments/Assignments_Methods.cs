@@ -15,7 +15,8 @@ class Assignments_Methods
 
     public float CalculateBMI(float weight, float height)
     {        
-        float bmi = (weight / (height * height));
+        float heightInm = height * 0.3048f;
+        float bmi = (weight / (heightInm * heightInm));
         return bmi;
     }
 }
