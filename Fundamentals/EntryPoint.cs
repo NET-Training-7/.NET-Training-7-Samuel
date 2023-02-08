@@ -46,14 +46,17 @@
 
 // Test test1 = new();
 
-Assignments_Methods obj = new();
+// Assignments_Methods obj = new();
 
-double m1 = obj.CalculateProductOfSquare(12, 12);
-Console.WriteLine("The product of square of two supplied number is " + m1);
+// double m1 = obj.CalculateProductOfSquare(12, 12);
+// Console.WriteLine("The product of square of two supplied number is " + m1);
 
-double m2 = obj.CalculateCubeRoot(23);
-Console.WriteLine("The cuberoot of given number is " + m2);
+// double m2 = obj.CalculateCubeRoot(23);
+// Console.WriteLine("The cuberoot of given number is " + m2);
 
 
-float m3 = obj.CalculateBMI(62, 5.6f);
-Console.WriteLine("The BMI index of a person by giving weight as 62 Kg and height of 1.7 m is " + m3);
+// string m3 = obj.CalculateBMI(62, 5.6f);
+// Console.WriteLine(m3);
+
+Test2 obj = new();
+obj.T();
