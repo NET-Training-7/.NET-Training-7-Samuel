@@ -58,5 +58,10 @@
 // string m3 = obj.CalculateBMI(62, 5.6f);
 // Console.WriteLine(m3);
 
-Test2 obj = new();
-obj.T();
+// Test2 obj = new();
+// obj.T();
+
+
+var car1 = new OilEngineVehicle("Car","Nexon","Tata",4,15.5f,"BA.33 PA",1500f);
+car1.PrintDetails();
+// // car1.CalculateEnginePower(car1.)
