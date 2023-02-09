@@ -62,6 +62,13 @@
 // obj.T();
 
 
-var car1 = new OilEngineVehicle("Car","Nexon","Tata",4,15.5f,"BA.33 PA",1500f);
-car1.PrintDetails();
-// // car1.CalculateEnginePower(car1.)
+// var car1 = new OilEngineVehicle("Car","Nexon","Tata",4,15.5f,"BA.33 PA",1500f);
+// car1.PrintDetails();
+
+
+var laptop1 = new Macbook("Apple","M1MacbookPro",350000,"M1");
+laptop1.PrintLaptopDetail();
+
+var laptop2 = new ManageLaptops("Apple","M1MacbookPro",350000,7);
+laptop2.CalculateWinBatterLife();
+laptop2.CalculateMacBatterLife();
