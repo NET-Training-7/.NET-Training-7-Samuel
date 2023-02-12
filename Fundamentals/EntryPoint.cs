@@ -66,9 +66,16 @@
 // car1.PrintDetails();
 
 
-var laptop1 = new Macbook("Apple","M1MacbookPro",350000,"M1");
-laptop1.PrintLaptopDetail();
+// var laptop1 = new Macbook("Apple","M1MacbookPro",350000,"M1");
+// laptop1.PrintLaptopDetail();
 
-var laptop2 = new ManageLaptops("Apple","M1MacbookPro",350000,7);
-laptop2.CalculateWinBatterLife();
-laptop2.CalculateMacBatterLife();
+// var laptop2 = new ManageLaptops("Apple","M1MacbookPro",350000,7);
+// laptop2.CalculateWinBatterLife();
+// laptop2.CalculateMacBatterLife();
+
+//Phone phone1 = new("Apple","iphone 13",new DateTime(2022,9,16));
+Phone phone1 = new();
+phone1.Brand = ("A");
+phone1.Model = "iphone 14";
+phone1.ReleaseDate = new DateTime(2022,9,16);
+var f = phone1.ChipManuFacturer;
