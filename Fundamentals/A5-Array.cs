@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+namespace Basics;
+
 class Array // Pascal
 {
     void LearnArrays()  // Pascal casing

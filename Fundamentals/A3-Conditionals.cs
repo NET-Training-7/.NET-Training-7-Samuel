@@ -1,5 +1,5 @@
 using System;
-
+namespace Basics;
 class Conditionals
 {
     void LearnConditionals()

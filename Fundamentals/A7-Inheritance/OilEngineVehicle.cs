@@ -1,5 +1,5 @@
 using System;
-
+namespace Inhertiance;
 class OilEngineVehicle : Vehicle
 {
     internal float engineCapacityInCC;

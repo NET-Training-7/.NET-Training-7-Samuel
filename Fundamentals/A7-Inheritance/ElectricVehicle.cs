@@ -1,4 +1,5 @@
 using System;
+namespace Inhertiance;
 class ElectricVehicle : Vehicle
 {
     public ElectricVehicle(string type, string model, string vendor, byte wheels,

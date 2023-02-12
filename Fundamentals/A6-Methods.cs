@@ -1,4 +1,6 @@
 using System;
+namespace Basics;
+
 class MethodLearning
 {
     // returns nothing, takes no argument

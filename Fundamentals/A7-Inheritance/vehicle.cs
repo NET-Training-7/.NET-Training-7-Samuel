@@ -1,4 +1,5 @@
 using System;
+namespace Inhertiance;
 class Vehicle 
 {
     internal string vendor;

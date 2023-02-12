@@ -1,5 +1,6 @@
 ﻿using System;
-
+using Basics;
+using Inhertiance;
 
 // MethodLearning obj = new();
 // obj.Display();
@@ -61,9 +62,9 @@
 // Test2 obj = new();
 // obj.T();
 
-
-// var car1 = new OilEngineVehicle("Car","Nexon","Tata",4,15.5f,"BA.33 PA",1500f);
-// car1.PrintDetails();
+var bcar1 = new Vehicle("Car","Nexon","Tata",4,15.5f,"BA.33 PA");
+var car1 = new OilEngineVehicle("Car","Nexon","Tata",4,15.5f,"BA.33 PA",1500f);
+car1.PrintDetails();
 
 
 // var laptop1 = new Macbook("Apple","M1MacbookPro",350000,"M1");
