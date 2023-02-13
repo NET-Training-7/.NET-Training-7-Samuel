@@ -17,7 +17,6 @@
     3.5. Class 4: inherits class 2 and implements interface1
 
 4. Write a real world class that contains:
-
     4.1. Three properties: full, read-only and write-only 
     4.2. A static method
     4.3. put this class with in a namespace
