@@ -3,7 +3,7 @@ namespace StudentDetail;
 class Student
 {
     string fullName;
-    public string FullName
+    public string FullName // Full property
     {
         get
         {
@@ -15,7 +15,7 @@ class Student
         }
     }
     byte standard;
-    public byte Standard
+    public byte Standard // Read-only property
     {
         get
         {
@@ -23,7 +23,7 @@ class Student
         }
     }
     byte age;
-    public byte Age
+    public byte Age // Write-only property
     {
         set
         {
