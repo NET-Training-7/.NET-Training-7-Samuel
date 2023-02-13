@@ -18,7 +18,7 @@
 
 4. Write a real world class that contains:
 
-4.1. Three properties: full, read-only and write-only 
-4.2. A static method
-4.3. put this class with in a namespace
-4.4. instantiate (create object) this class in entry point (Main method)
+    4.1. Three properties: full, read-only and write-only 
+    4.2. A static method
+    4.3. put this class with in a namespace
+    4.4. instantiate (create object) this class in entry point (Main method)
