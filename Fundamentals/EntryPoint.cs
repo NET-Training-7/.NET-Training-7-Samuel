@@ -81,12 +81,22 @@ using StudentDetail;
 // phone1.Model = "iphone 14";
 // phone1.ReleaseDate = new DateTime(2022,9,16);
 // var f = phone1.ChipManuFacturer;
-Student child = new();
-child.FullName = "Happy Singh";
-byte childAge = child.Standard;
-var x  = child.Age = 13;
 
-Console.WriteLine("Name of a student: "+child.FullName);
-Console.WriteLine("Student studies in standard: "+child.Standard);
-Console.WriteLine("Age of the student is: " + x);
-Student.PrintResult("A");
+
+
+// Student child = new();
+// child.FullName = "Happy Singh";
+// byte childAge = child.Standard;
+// var x  = child.Age = 13;
+
+// Console.WriteLine("Name of a student: "+child.FullName);
+// Console.WriteLine("Student studies in standard: "+child.Standard);
+// Console.WriteLine("Age of the student is: " + x);
+// Student.PrintResult("A");
+
+Generics<string> gn = new();
+gn.Print<string>("Nepal is a beautiful country");
+gn.Print<int>(098676);
+gn.Print<bool>(false);
+
+gn.Greet("Hello mylove");
