@@ -1,6 +1,7 @@
 ﻿using System;
 using Basics;
 using Inhertiance;
+using StudentDetail;
 
 // MethodLearning obj = new();
 // obj.Display();
@@ -62,9 +63,9 @@ using Inhertiance;
 // Test2 obj = new();
 // obj.T();
 
-var bcar1 = new Vehicle("Car","Nexon","Tata",4,15.5f,"BA.33 PA");
-var car1 = new OilEngineVehicle("Car","Nexon","Tata",4,15.5f,"BA.33 PA",1500f);
-car1.PrintDetails();
+// var bcar1 = new Vehicle("Car","Nexon","Tata",4,15.5f,"BA.33 PA");
+// var car1 = new OilEngineVehicle("Car","Nexon","Tata",4,15.5f,"BA.33 PA",1500f);
+// car1.PrintDetails();
 
 
 // var laptop1 = new Macbook("Apple","M1MacbookPro",350000,"M1");
@@ -75,8 +76,17 @@ car1.PrintDetails();
 // laptop2.CalculateMacBatterLife();
 
 //Phone phone1 = new("Apple","iphone 13",new DateTime(2022,9,16));
-Phone phone1 = new();
-phone1.Brand = ("A");
-phone1.Model = "iphone 14";
-phone1.ReleaseDate = new DateTime(2022,9,16);
-var f = phone1.ChipManuFacturer;
+// Phone phone1 = new();
+// phone1.Brand = ("A");
+// phone1.Model = "iphone 14";
+// phone1.ReleaseDate = new DateTime(2022,9,16);
+// var f = phone1.ChipManuFacturer;
+Student child = new();
+child.FullName = "Happy Singh";
+byte childAge = child.Standard;
+var x  = child.Age = 13;
+
+Console.WriteLine("Name of a student: "+child.FullName);
+Console.WriteLine("Student studies in standard: "+child.Standard);
+Console.WriteLine("Age of the student is: " + x);
+Student.PrintResult("A");
