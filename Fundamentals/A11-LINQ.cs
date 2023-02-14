@@ -98,12 +98,14 @@ class LINQ
 
 
 
-        // Q8. Get uppercase equivalent  of all names
+        // Q8. Get uppercase equivalent  of all names and sort them in ascending order
         Console.WriteLine();
-        var uppercaseNames = names.Select(s => s.ToUpper());
+        var uppercaseNames = names.Select(s => s.ToUpper()).OrderBy(s => s);
          foreach (var name in uppercaseNames)
         {
             Console.Write($"{name} ");
         }
+
+        // Q9. Get
     }
 }
