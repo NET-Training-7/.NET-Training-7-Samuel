@@ -9,8 +9,8 @@ using System.Linq;
 
 class LINQ
 {
-    int[] scores = {2,3, 4, 1, 11, 15, 30, 66, 88, 500, 112, 12, 34 };
-
+    int[] scores = { 2, 3, 4, 1, 11, 15, 30, 66, 88, 500, 112, 12, 34 };
+    string[] names = {"Samuel","Subu","Anmol","Damak","Pops"};
     public void LearnToQuery()
     {
 
@@ -90,11 +90,20 @@ class LINQ
         // Q7. Find square roots of all numbers ending in 0 from scores
 
         Console.WriteLine("\nPrinting square roots of all numbers ending in 0");
-        var squareRootEnding0 = scores.Where(s => s%10 == 0).Select(s => Math.Sqrt(s));
+        var squareRootEnding0 = scores.Where(s => s % 10 == 0).Select(s => Math.Sqrt(s));
         foreach (var num in squareRootEnding0)
         {
             Console.Write($"{num} ");
         }
 
+
+
+        // Q8. Get uppercase equivalent  of all names
+        Console.WriteLine();
+        var uppercaseNames = names.Select(s => s.ToUpper());
+         foreach (var name in uppercaseNames)
+        {
+            Console.Write($"{name} ");
+        }
     }
 }
