@@ -9,7 +9,7 @@ using System.Linq;
 
 class LINQ
 {
-    int[] scores = {2,3, 4, 1, 11, 15, 30, 66, 88, 516, 112, 12, 34 };
+    int[] scores = {2,3, 4, 1, 11, 15, 30, 66, 88, 500, 112, 12, 34 };
 
     public void LearnToQuery()
     {
@@ -89,8 +89,8 @@ class LINQ
 
         // Q7. Find square roots of all numbers ending in 0 from scores
 
-        Console.WriteLine("Printing square roots of all numbers ending in 0");
-        var squareRootEnding0 = scores.Where(s => Math.Sqrt(s) < 1).Select(s => s);
+        Console.WriteLine("\nPrinting square roots of all numbers ending in 0");
+        var squareRootEnding0 = scores.Where(s => s%10 == 0).Select(s => Math.Sqrt(s));
         foreach (var num in squareRootEnding0)
         {
             Console.Write($"{num} ");
