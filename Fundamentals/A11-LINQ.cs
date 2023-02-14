@@ -10,9 +10,17 @@ using System.Linq;
 class LINQ
 {
     int[] scores = { 2, 3, 4, 1, 11, 15, 30, 66, 88, 500, 112, 12, 34 };
-    string[] names = {"Samuel","Subu","Anmol","Damak","Pops"};
+    string[] names = { "Samuel", "Subu", "Anmol", "Damak", "Pops" };
+
     public void LearnToQuery()
     {
+        Dictionary<string, long> countryPopulation = new();
+        countryPopulation.Add("Nepal", 31134323);
+        countryPopulation.Add("India", 127398217498);
+        countryPopulation.Add("China", 123802342434);
+        countryPopulation.Add("USA", 3802342434);
+        countryPopulation.Add("Germany", 22342434);
+        countryPopulation.Add("Canada", 12342434);
 
         //Q1. Find all even numbers from scores 
         // Imperative way
@@ -101,11 +109,25 @@ class LINQ
         // Q8. Get uppercase equivalent  of all names and sort them in ascending order
         Console.WriteLine();
         var uppercaseNames = names.Select(s => s.ToUpper()).OrderBy(s => s);
-         foreach (var name in uppercaseNames)
+        foreach (var name in uppercaseNames)
         {
             Console.Write($"{name} ");
         }
 
-        // Q9. Get
+        // Q9. List Country names,
+        Console.WriteLine();
+        var countryNames = countryPopulation.Select(n => n.Key);
+        foreach (var name in countryNames)
+        {
+            Console.Write($"{name} ");
+        }
+
+        //  list all countries in ascending order of their population.
+Console.WriteLine();
+        var countriesWithPopluationAscending = countryPopulation.OrderBy(n => n.Value).Select(n => n.Key);
+        foreach (var name in countriesWithPopluationAscending)
+        {
+            Console.Write($"{name} ");
+        }
     }
 }

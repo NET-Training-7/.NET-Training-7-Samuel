@@ -21,3 +21,18 @@
     4.2. A static method
     4.3. put this class with in a namespace
     4.4. instantiate (create object) this class in entry point (Main method)
+
+5. You have following dictionary
+    ...
+       Dictionary<string, long> countryPopulation = new();
+        countryPopulation.Add("Nepal", 9837498);
+        countryPopulation.Add("India", 127398217498);
+        countryPopulation.Add("China", 123802342434);
+        countryPopulation.Add("USA", 3802342434);
+        countryPopulation.Add("Germany", 22342434);
+        countryPopulation.Add("Canada", 12342434);
+    ...
+
+    5.1. List all country names.
+    5.2. List all countries in ascending order of their population
+    
