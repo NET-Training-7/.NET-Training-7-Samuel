@@ -94,9 +94,13 @@ using StudentDetail;
 // Console.WriteLine("Age of the student is: " + x);
 // Student.PrintResult("A");
 
-Generics<string> gn = new();
-gn.Print<string>("Nepal is a beautiful country");
-gn.Print<int>(098676);
-gn.Print<bool>(false);
+// Generics<string> gn = new();
+// gn.Print<string>("Nepal is a beautiful country");
+// gn.Print<int>(098676);
+// gn.Print<bool>(false);
 
-gn.Greet("Hello mylove");
+// gn.Greet("Hello mylove");
+
+
+LINQ l = new();
+l.LearnToQuery();
