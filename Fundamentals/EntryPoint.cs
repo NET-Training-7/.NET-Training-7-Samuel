@@ -103,4 +103,5 @@ using StudentDetail;
 
 
 LINQ l = new();
-l.LearnToQuery();
+l.LearnToQuerySelectAndWhere();
+l.LearnToQueryOthers();

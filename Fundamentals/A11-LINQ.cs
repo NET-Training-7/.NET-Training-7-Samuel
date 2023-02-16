@@ -12,7 +12,7 @@ class LINQ
     int[] scores = { 2, 3, 4, 1, 11, 15, 30, 66, 88, 500, 112, 12, 34 };
     string[] names = { "Samuel", "Subu", "Anmol", "Damak", "Pops" };
 
-    public void LearnToQuery()
+    public void LearnToQuerySelectAndWhere()
     {
         Dictionary<string, long> countryPopulation = new();
         countryPopulation.Add("Nepal", 31134323);
@@ -123,11 +123,30 @@ class LINQ
         }
 
         //  list all countries in ascending order of their population.
-Console.WriteLine();
+        Console.WriteLine();
         var countriesWithPopluationAscending = countryPopulation.OrderBy(n => n.Value).Select(n => n.Key);
         foreach (var name in countriesWithPopluationAscending)
         {
             Console.Write($"{name} ");
         }
+    }
+
+    public void LearnToQueryOthers()
+    {
+        // Find if scores contains any even number
+
+        var containEvenNumber = scores.Any(x => x % 2 == 0);
+
+
+        // Find if scores contains all even number
+
+        var containEvenNumberAll = scores.All(x=> x%2 ==0);
+
+        // Get first 3 elements from scores
+
+        var first3Number = scores.Take(3);
+
+        var escapeFirst5 = scores.Skip(5).Take(3);
+
     }
 }
