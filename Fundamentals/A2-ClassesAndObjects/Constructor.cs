@@ -2,34 +2,44 @@ using System;
 
 class Person
 {
-    internal string name;
-    internal byte age;
+    internal string Name { get; set; }
+    internal DateTime Dob { get; set; }
+    internal string Natioanality { get; set; }
+    public int EducationDegreeId{get; set;}
 
-    public Person()    // Default parameterless Constructor
+    public Person()     // Default parameterless contructor
+    {
+    }
+
+    public Person(string n, DateTime a)
+    {
+        Name = n;
+        Dob = a;
+    }
+
+    ~Person()
     {
 
     }
+}
 
-    public Person(string n, byte a)
-    {
-        this.name = n;
-        this.age = a;
-    }
-
+class EducationDegree
+{
+    public string Title { get; set; }
+    public int Id { get; set; }
+    public string Major { get; set; }
+    public string University { get; set; }
 }
 
 class Test2
 {
-   public void T()
+    void T()
     {
         var p1 = new Person();
-        p1.age = 23;
-        p1.name = "Shyam";
+        // p1.Age = 23;
+        p1.Name = "Ram";
 
-
-        var p2 = new Person("Kishan",67);
-        Console.WriteLine(p2);
-        Console.WriteLine(p2.name+" "+p2.age);
-
+        var p2 = new Person("Kishan", DateTime.Now);
+        var p3 = new Person("Kishan", DateTime.Now);
     }
 }
