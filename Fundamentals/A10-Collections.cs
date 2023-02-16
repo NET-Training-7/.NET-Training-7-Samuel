@@ -11,12 +11,12 @@ class Collections
         numList.Remove(56);
 
         List<Person> people = new List<Person>();
-        people.Add(new Person() { name = "Bishnu" });
-        people.Add(new Person() { name = "Sam" });
-        people.Add(new Person() { name = "Manoj" });
-        people.Add(new Person() { name = "Rakish" });
+        people.Add(new Person() { Name = "Bishnu" });
+        people.Add(new Person() { Name = "Sam" });
+        people.Add(new Person() { Name = "Manoj" });
+        people.Add(new Person() { Name = "Rakish" });
 
-        people.Remove(new Person() { name = "Sam" });
+        people.Remove(new Person() { Name = "Sam" });
     }
 
     void LearnOthers() // learn stack
