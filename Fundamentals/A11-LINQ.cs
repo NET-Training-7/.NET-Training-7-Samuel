@@ -219,8 +219,8 @@ class LINQ
         new Person(){EducationDegreeId = 2,Natioanality="China", Name = "Ajaya", Dob = new DateTime(2010, 1, 13)},
         new Person(){EducationDegreeId = 3,Natioanality="India", Name = "Krishna", Dob = new DateTime(1988, 2, 23)},
         new Person(){EducationDegreeId = 1,Natioanality="USA", Name = "Anirudra", Dob = new DateTime(1978, 3, 1)},
-        new Person(){EducationDegreeId = 3,Natioanality="India", Name = "Kishan", Dob = new DateTime(1990, 4, 13)},
-        new Person(){EducationDegreeId = 2,Natioanality="Nepal", Name = "Roshan", Dob = new DateTime(2008, 10, 29)},
+        new Person(){EducationDegreeId = 2,Natioanality="India", Name = "Kishan", Dob = new DateTime(1990, 4, 13)},
+        new Person(){EducationDegreeId = 3,Natioanality="Nepal", Name = "Roshan", Dob = new DateTime(2008, 10, 29)},
     };
     List<EducationDegree> degrees = new()
     {
@@ -263,8 +263,8 @@ new() {Id = 3, Major = "Education", Title = "Med",University = "TU"},
                      select name.ToUpper();
 
 
-        // List all country names
-        // List all countries in descending order of their population
+        // Q.9. List all country names
+        // Q 10.List all countries in descending order of their population
 
         var countryNames = countryPopulation.Select(c => c.Key);
         var countriesSorted = from c in countryPopulation
@@ -279,11 +279,11 @@ new() {Id = 3, Major = "Education", Title = "Med",University = "TU"},
     public void LearnToQueryOthers()
     {
         // Quntification: Any, All
-        // Find if scores contains any even number
+        // Q 11. Find if scores contains any even number
         var containEvenNumber = scores.Any(x => x % 2 == 0);
         var containAnyElement = scores.Any();
 
-        // Find if scores has all even numbers
+        // Q 12. Find if scores has all even numbers
         var allEvenNumbers = scores.All(x => x % 2 == 0);
 
         // Partitioning: skip and take
@@ -295,23 +295,40 @@ new() {Id = 3, Major = "Education", Title = "Med",University = "TU"},
     }
     public void LearnTOQueryComplexCollections()
     {
-        // Find names of people who can vote
+        // Q. 13 Find names of people who can vote
         // fix this
 
         var voteList = from p in people
                        where (((DateTime.Now - p.Dob).TotalDays / 365) >= 18)
                        select p.Name;
 
-        // Find all nepalese people who born after .NET is released
+        // Q 14. Find all nepalese people who born after .NET is released
 
         var z = from p in people
                 where p.Natioanality == "Nepal" && p.Dob.Year > 2002
                 select p.Name;
 
-        foreach (var item in z)
+
+
+        // Q 15. Find all people names and correspoding degree title who has science major
+
+        var peopleDegree = from student in people
+                           join deg in degrees on student.EducationDegreeId equals deg.Id
+                           where deg.Major == "Science"
+                           select (student.Name, deg.Title);
+
+
+
+        // Q16. Find all indians who are doing arts. Print all people and their education dtails. 
+
+        var indiansArts = from student in people
+                          join deg in degrees on student.EducationDegreeId equals deg.Id
+                          where (student.Natioanality == "India" && deg.Major == "Arts")
+                          select (student.Name, deg.Major, deg.Title, deg.University);
+
+        foreach (var item in indiansArts)
         {
             Console.WriteLine(item);
         }
-
     }
 }
