@@ -21,7 +21,14 @@ class FDHandling
 
         // create a text file "countries.txt" with at least of 5 country names
         var countryPath = $"{rootFolder}\\Nepal\\countries.txt";
-        File.WriteAllText(countryPath,"Nepal \nIndia \nChina \nUSA \nNew Zealand \nScotland");
+        File.WriteAllText(countryPath, "Nepal \nIndia \nChina \nUSA \nNew Zealand \nScotland");
         Console.WriteLine("countries.txt file created.");
+    }
+
+    public void LearnMoreAboutFileHandling()
+    {
+        var filePath = @"E:\Broadway Infosys Teachings\Git-Tutorial\.NET-Training-7-Samuel\Fundamentals\FDHandling\AStory.txt";
+        var content = File.ReadAllText(filePath);
+        Console.WriteLine(content);
     }
 }
