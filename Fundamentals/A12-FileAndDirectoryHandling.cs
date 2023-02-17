@@ -29,6 +29,17 @@ class FDHandling
     {
         var filePath = @"E:\Broadway Infosys Teachings\Git-Tutorial\.NET-Training-7-Samuel\Fundamentals\FDHandling\AStory.txt";
         var content = File.ReadAllText(filePath);
-        Console.WriteLine(content);
+        //Console.WriteLine(content);
+
+        // Find following in above file content:-
+        // - No. of sentences and their list
+        // - No of words and their list
+        // - No of characters and their list
+        // - No of special characters and their list
+
+        string x = "nepal, india- china, USA";
+        char[] separators = { ',', '?' };
+        string[]  parts = content.Split(separators);
+
     }
 }
