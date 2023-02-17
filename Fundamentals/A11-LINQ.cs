@@ -315,6 +315,7 @@ new() {Id = 3, Major = "Education", Title = "Med",University = "TU"},
         var peopleDegree = from student in people
                            join deg in degrees on student.EducationDegreeId equals deg.Id
                            where deg.Major == "Science"
+                           orderby student.Name
                            select (student.Name, deg.Title);
 
 
@@ -324,9 +325,20 @@ new() {Id = 3, Major = "Education", Title = "Med",University = "TU"},
         var indiansArts = from student in people
                           join deg in degrees on student.EducationDegreeId equals deg.Id
                           where (student.Natioanality == "India" && deg.Major == "Arts")
-                          select (student.Name, deg.Major, deg.Title, deg.University);
+                          select (student,deg);
 
-        foreach (var item in indiansArts)
+      
+
+        // Q17 find the total number students in each Title
+        // Hint: group by 
+
+        var totalNoStudentsInEachField = from student in people
+        join deg in degrees on student.EducationDegreeId equals deg.Id
+        group student by deg.Title into studentGroup
+        select new{TitleName = studentGroup.Key, StudentCount = studentGroup.Count()};
+    
+
+      foreach (var item in totalNoStudentsInEachField)
         {
             Console.WriteLine(item);
         }
