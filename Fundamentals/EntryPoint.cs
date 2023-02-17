@@ -2,6 +2,7 @@
 using Basics;
 using Inhertiance;
 using StudentDetail;
+using  IO;
 
 // MethodLearning obj = new();
 // obj.Display();
@@ -102,7 +103,11 @@ using StudentDetail;
 // gn.Greet("Hello mylove");
 
 
-LINQ l = new();
-// l.LearnToQuerySelectAndWhere();
-// l.LearnToQueryOthers();
-l.LearnTOQueryComplexCollections();
+// LINQ l = new();
+// // l.LearnToQuerySelectAndWhere();
+// // l.LearnToQueryOthers();
+// l.LearnTOQueryComplexCollections();
+
+
+FDHandling fd = new();
+fd.LearnFiles();
