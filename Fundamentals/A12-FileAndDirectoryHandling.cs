@@ -73,16 +73,34 @@ class FDHandling
         // }
     }
 
-public void DoClassWork()
-{
-    // create a folder "Data" and create a text file inside that folder containing name and DOB of atleast 5 people
-     var rootFolderPath = @"E:\Broadway Infosys Teachings\Git-Tutorial\.NET-Training-7-Samuel\Fundamentals\FDHandling";
-     Directory.CreateDirectory($"{rootFolderPath}\\Data");
-     Console.WriteLine("Folder: Data  ,created");
+    public void DoClassWork()
+    {
+        // Q1. create a folder "Data" and create a text file inside that folder containing name and DOB of atleast 5 people
+        var rootFolderPath = @"E:\Broadway Infosys Teachings\Git-Tutorial\.NET-Training-7-Samuel\Fundamentals\FDHandling";
+        Directory.CreateDirectory($"{rootFolderPath}\\Data");
+        Console.WriteLine("Folder: Data  ,created");
 
-     var createFilePeople = $"{rootFolderPath}\\Data\\PeopleAndDOB";
-     File.WriteAllText(createFilePeople,"Name: Samuel Sherpa  DOB: 2000-07-02 \nName: Happy Basnet  DOB: 2001-04-23"+ 
-     "\nName: Pawan Rana  DOB: 1999-04-12 \nName: Manoj Rai  DOB: 2000-05-01 \nName: Rana Karki  DOB: 2040-03-07");
+        var createFilePeople = $"{rootFolderPath}\\Data\\PeopleAndDOB";
+        File.WriteAllText(createFilePeople, "Name: Samuel Sherpa  DOB: 2000-07-02 \nName: Happy Basnet  DOB: 2001-04-23" +
+        "\nName: Pawan Rana  DOB: 1999-04-12 \nName: Manoj Rai  DOB: 2000-05-01 \nName: Rana Karki  DOB: 2040-03-07");
 
-}
+        // Q2. Create 20 folder namely Folder-A,Folder-B....Folder-T
+        // Q3. In Folder-A copy yesterday's text file containing story..
+        // Q4 In Folder-B create a text file containing meta data (Size, CreateDate, etc) of that story file
+
+
+        // Q2. 
+        var folderPathforAssignment = @"E:\Broadway Infosys Teachings\Git-Tutorial\.NET-Training-7-Samuel\Fundamentals\FDHandling\Data";
+        string folderName = "Folder-";
+        string alphabet = "ABCDEFGHIJKLMNOPQRST";
+        char[] alphaChar = (alphabet + alphabet.ToLower()).ToCharArray();
+        for (int i = 0; i < 20; i++)
+        {
+            Directory.CreateDirectory($"{folderPathforAssignment}\\{folderName}" + alphaChar[i]);
+        }
+
+        //Q3.
+        // var content = File.ReadAllText(@"E:\Broadway Infosys Teachings\Git-Tutorial\.NET-Training-7-Samuel\Fundamentals\FDHandling\AStory.txt");
+        // var to
+    }
 }
