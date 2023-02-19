@@ -111,4 +111,5 @@ using  IO;
 
 FDHandling fd = new();
 // fd.LearnFiles();
-fd.LearnMoreAboutFileHandling();
+// fd.LearnMoreAboutFileHandling();
+fd.DoClassWork();

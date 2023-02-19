@@ -72,4 +72,17 @@ class FDHandling
         //     Console.WriteLine(match.Value);
         // }
     }
+
+public void DoClassWork()
+{
+    // create a folder "Data" and create a text file inside that folder containing name and DOB of atleast 5 people
+     var rootFolderPath = @"E:\Broadway Infosys Teachings\Git-Tutorial\.NET-Training-7-Samuel\Fundamentals\FDHandling";
+     Directory.CreateDirectory($"{rootFolderPath}\\Data");
+     Console.WriteLine("Folder: Data  ,created");
+
+     var createFilePeople = $"{rootFolderPath}\\Data\\PeopleAndDOB";
+     File.WriteAllText(createFilePeople,"Name: Samuel Sherpa  DOB: 2000-07-02 \nName: Happy Basnet  DOB: 2001-04-23"+ 
+     "\nName: Pawan Rana  DOB: 1999-04-12 \nName: Manoj Rai  DOB: 2000-05-01 \nName: Rana Karki  DOB: 2040-03-07");
+
+}
 }
