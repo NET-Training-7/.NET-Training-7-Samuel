@@ -78,29 +78,57 @@ class FDHandling
         // Q1. create a folder "Data" and create a text file inside that folder containing name and DOB of atleast 5 people
         var rootFolderPath = @"E:\Broadway Infosys Teachings\Git-Tutorial\.NET-Training-7-Samuel\Fundamentals\FDHandling";
         Directory.CreateDirectory($"{rootFolderPath}\\Data");
-        Console.WriteLine("Folder: Data  ,created");
+        string[] peopleData = {
+            "Ram Rana\t1998/12/12",
+            "Kishan Rana\t1999/12/10",
+            "Sita Rana\t1998/2/22",
+            "Suju Nepal\t1998/1/30",
+            "Samuel Sherpa\t1998/3/23"
+        };
 
         var createFilePeople = $"{rootFolderPath}\\Data\\PeopleAndDOB";
-        File.WriteAllText(createFilePeople, "Name: Samuel Sherpa  DOB: 2000-07-02 \nName: Happy Basnet  DOB: 2001-04-23" +
-        "\nName: Pawan Rana  DOB: 1999-04-12 \nName: Manoj Rai  DOB: 2000-05-01 \nName: Rana Karki  DOB: 2040-03-07");
+
+        File.WriteAllLines(createFilePeople, peopleData);
+
+
 
         // Q2. Create 20 folder namely Folder-A,Folder-B....Folder-T
-        // Q3. In Folder-A copy yesterday's text file containing story..
-        // Q4 In Folder-B create a text file containing meta data (Size, CreateDate, etc) of that story file
 
+        // -- below is a difficult way
+        // string folderName = "Folder-";
+        // string alphabet = "ABCDEFGHIJKLMNOPQRST";
+        // char[] alphaChar = (alphabet + alphabet.ToLower()).ToCharArray();
+        // for (int i = 0; i < 20; i++)
+        // {
+        //     Directory.CreateDirectory($"{folderPathforAssignment}\\{folderName}" + alphaChar[i]);
+        // }
 
-        // Q2. 
         var folderPathforAssignment = @"E:\Broadway Infosys Teachings\Git-Tutorial\.NET-Training-7-Samuel\Fundamentals\FDHandling\Data";
-        string folderName = "Folder-";
-        string alphabet = "ABCDEFGHIJKLMNOPQRST";
-        char[] alphaChar = (alphabet + alphabet.ToLower()).ToCharArray();
-        for (int i = 0; i < 20; i++)
+        for (char i = 'A'; i <= 'T'; i++)
         {
-            Directory.CreateDirectory($"{folderPathforAssignment}\\{folderName}" + alphaChar[i]);
+            Directory.CreateDirectory($"{folderPathforAssignment}\\Folder-{i}");
         }
 
-        //Q3.
-        // var content = File.ReadAllText(@"E:\Broadway Infosys Teachings\Git-Tutorial\.NET-Training-7-Samuel\Fundamentals\FDHandling\AStory.txt");
-        // var to
+        // Q3. In Folder-A copy yesterday's text file containing story..
+
+        var source = @"E:\Broadway Infosys Teachings\Git-Tutorial\.NET-Training-7-Samuel\Fundamentals\FDHandling\AStory.txt";
+        var target = @"E:\Broadway Infosys Teachings\Git-Tutorial\.NET-Training-7-Samuel\Fundamentals\FDHandling\Data\Folder-A\Story-A1Copy.txt";
+        File.Copy(source, target);
+
+
+        // Q4 In Folder-B create a text file containing meta data (Size, CreateDate, etc) of that story file
+
+        var filePath1 = @"E:\Broadway Infosys Teachings\Git-Tutorial\.NET-Training-7-Samuel\Fundamentals\FDHandling\Data\Folder-B\metadata.txt";
+
+        var storyFilePath = @"E:\Broadway Infosys Teachings\Git-Tutorial\.NET-Training-7-Samuel\Fundamentals\FDHandling\AStory.txt";
+
+        FileInfo fileInfos = new FileInfo(storyFilePath);
+        var name = $"Name: {fileInfos.Name}";
+        var size = $"Size: {fileInfos.Length}  Bytes";
+        var created = $"Created: {fileInfos.CreationTime}";
+
+
+        File.WriteAllText(filePath1, $"{name}\n{size}\n{created}");
+
     }
 }
