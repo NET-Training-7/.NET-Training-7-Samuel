@@ -48,14 +48,9 @@ class ExceptionHandling
         try
         {
             DateTime holiDate = new(2023, 03, 18);
-            var remainingDays = (holiDate - DateTime.Today).Days;
+            var remainingDays = (holiDate - DateTime.Now).Days;
             Console.WriteLine($"{remainingDays} days are remaining for holi");
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.Write("HAPPY");
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine(" HOLI !!");
 
-            Console.ResetColor();
 
         }
 
@@ -64,6 +59,18 @@ class ExceptionHandling
             Console.WriteLine($"Invalid Datetime format.\n{ex.Message}");
         }
 
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Entered Date time is out of range.\n{ex.Message}");
+        }
+        finally
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("HAPPY");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(" HOLI !!");
 
+            Console.ResetColor();
+        }
     }
 }
