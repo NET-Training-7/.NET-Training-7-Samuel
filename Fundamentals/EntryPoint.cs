@@ -109,7 +109,11 @@ using  IO;
 // l.LearnTOQueryComplexCollections();
 
 
-FDHandling fd = new();
-// fd.LearnFiles();
-// fd.LearnMoreAboutFileHandling();
-fd.DoClassWork();
+// FDHandling fd = new();
+// // fd.LearnFiles();
+// // fd.LearnMoreAboutFileHandling();
+// fd.DoClassWork();
+
+ExceptionHandling obj = new();
+obj.DoClassWork();
+
