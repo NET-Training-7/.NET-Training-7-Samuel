@@ -37,7 +37,7 @@
     5.1. List all country names.
     5.2. List all countries in ascending order of their population
 
-    ## Wev Development Assignments
+## Wev Development Assignments
     
-    1. Create a html page to display data for at least 5 countries in a table. Apply bootstrap designs to that table.
+    1.Create a html page to display data for at least 5 countries in a table. Apply bootstrap designs to that table.
     
