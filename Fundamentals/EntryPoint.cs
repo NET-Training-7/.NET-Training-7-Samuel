@@ -114,6 +114,12 @@ using  IO;
 // // fd.LearnMoreAboutFileHandling();
 // fd.DoClassWork();
 
-ExceptionHandling obj = new();
-obj.DoClassWork();
+// ExceptionHandling obj = new();
+// obj.DoClassWork();
 
+// ParallelProgramming obj = new();
+// obj.ComputeSquareRoots();
+
+
+AsyncProramming obj1 = new();
+Console.WriteLine(obj1.Calculate());
