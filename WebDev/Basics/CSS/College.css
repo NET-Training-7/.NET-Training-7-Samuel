@@ -1,0 +1,24 @@
+.olStyle
+{
+    color: blueviolet;
+     font-size: 18px;
+      font-family: monospace;
+}
+ul
+{
+    color: red;
+    font-size: 18px;
+    font-family:monospace;
+}
+
+body /*tag selector*/
+{
+    align-items: center;
+}
+
+#ulList 
+{
+    color: rgb(78, 161, 10);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
