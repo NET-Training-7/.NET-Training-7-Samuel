@@ -1,5 +1,6 @@
 # .NET-Training-7-Samuel
 
+## C# Assignments
 
 1. Create a class called Animal with at least 4 fields and a simple method to display animal details.
    Create an object of Animal in entry point, assign all fields and call a method displaying animal details.
@@ -35,4 +36,8 @@
 
     5.1. List all country names.
     5.2. List all countries in ascending order of their population
+
+    ## Wev Development Assignments
+    
+    1. Create a html page to display data for at least 5 countries in a table. Apply bootstrap designs to that table.
     
