@@ -41,3 +41,13 @@
     
     1.Create a html page to display data for at least 5 countries in a table. Apply bootstrap designs to that table.
     
+    2. Create  a page containing a form to alow users to enter their details like: 
+                 2.1. Name
+                 2.2. Address
+                 2.3. Gender
+                 2.4. Contact
+                 2.5. DOB
+                 2.6. Biography
+                 2.7. Subit button
+
+    > Use bootstrap design to style your elements
