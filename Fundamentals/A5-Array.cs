@@ -32,7 +32,7 @@ class Array // Pascal
 
         // Jagged array
         float[][] table = new float[5][];
-        table[0] = new float[3];
+         table[0] = new float[3];
         table[1] = new float[5];
     }
 }

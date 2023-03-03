@@ -1,8 +1,7 @@
-﻿@page "/students"
-@model StudentListModel
-@*Q.1. Display List of students in a table styles with bootstrap*@
-@*Q.2. Display dynamic list of students {binding to model} in  a table styled with bootstrap *@
+﻿@model List<Student>
 
+
+<a class="btn btn-outline-success" href="/students/add">+ New Student</a>
 
 
 <table class="table">
@@ -13,18 +12,27 @@
             <th>Major</th>
             <th>Contact</th>
             <th>Semester</th>
+            <th>Edit/Delete</th>
         </tr>
+
     </thead>
     <tbody>
-        @foreach(var student in Model.Students)
+        @foreach (var student in Model)
         {
-    <tr>
+            <tr>
                 <td>@student.RollNo</td>
                 <td>@student.Name</td>
                 <td>@student.Major</td>
                 <td>@student.Contact</td>
                 <td>@student.Semester</td>
-        </tr>
+                <td>
+                    <a class="btn btn-outline-warning">Edit</a>
+                    <a class="btn btn-outline-danger">Delete</a>
+                </td>
+
+            </tr>
+
+
         }
 
     </tbody>
