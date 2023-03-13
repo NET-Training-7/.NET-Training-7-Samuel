@@ -1,10 +1,10 @@
 # .NET-Training-7-Samuel
 
 ## Programming Languages 
-    1. Static (C#, Java etc.) vs Dynamic (JavaScript etc.) languages
-    2. Object Oriented Programming (OOP) Languages (C#, Java, C++, etc.)
-    3. Functional Languages (Haskell, Closure, F# etc.)
-    4. Procedural Languages (etc.)
+    1. Static (C#, Java etc.) vs Dynamic (JavaScript, Ruby, Python, PHP, etc.) languages
+    2. Object Oriented Programming (OOP) Languages (C#, Java, C++, Ruby, Python, TypeScript and PHP etc.)
+    3. Functional Languages (Python, Haskell, Clojure, F# etc.)
+    4. Procedural Languages (Basic, C, Forton, Algol, Cobol etc.)
 
 ## C# Assignments
 
