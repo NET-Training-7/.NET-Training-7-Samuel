@@ -1,5 +1,11 @@
 # .NET-Training-7-Samuel
 
+## Programming Languages 
+    1. Static (C#, Java etc.) vs Dynamic (JavaScript etc.) languages
+    2. Object Oriented Programming (OOP) Languages (C#, Java, C++, etc.)
+    3. Functional Languages (Haskell, Closure, F# etc.)
+    4. Procedural Languages (etc.)
+
 ## C# Assignments
 
     1. Create a class called Animal with at least 4 fields and a simple method to display animal details.
